@@ -1,0 +1,33 @@
+/* colores agencia allegro
+color piel: #ffe7d4
+color celeste:#65d4cc
+color morado:#493148
+color naranjo:#f89379
+
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color:#65d4cc;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+ }
+
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    color:#65d4cc ;
+}
+ 

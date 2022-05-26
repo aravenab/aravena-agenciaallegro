@@ -1,0 +1,292 @@
+----------------------------------------------------------HTML-------------------------------------------------
+<!-- CLASE 1  teorica
+ 
+
+
+
+
+
+
+----------------------------------------------------------------RESUMEN CLASES-----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------CLASE 1-------------------------------------------------------------------------------------
+El div es un contenedor en bloque mientras que el span es un contenedor en línea
+muy útil para el trabajo con textos.
+
+
+<p></p>
+● <br/> (de bloque)
+● <em> (de línea)
+● <strong> (de línea)
+● <div> (de bloque)
+● <span> (de línea)
+
+-->
+
+<!--  CLASE 2 - Formularios- botones - enlaces - multimedia en html - insertar img - 
+--------------------------------------------------------------------------------CLASE 2--------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------Formularios----------------------------------------------------------------------------------
+
+Para insertar un formulario se usa la etiqueta <form>, que dentro lleva todos los
+controles que vayan al mismo destino. Un formulario requiere 3 atributos para
+funcionar:
+● Action: documento que se encarga de recibir los datos y procesarlos.
+● Method: la forma en que será enviada la información. Existen dos métodos de
+envío, que son GET y POST.
+● Enctype: cómo se codificarán los contenidos.
+
+ACTION
+En este atributo se indicará cuál es el archivo que recibe y procesa los
+datos. Debe ser de un lenguaje de los llamados “del lado del servidor” (PHP /
+ASP / JSP). Si no se indica un valor, el Action será por defecto el mismo archivo
+donde está el formulario.
+
+METHOD
+Forma en la que se recopilan y envían los datos. Existen dos métodos comunes
+en el HTML:
+● GET: la información viajará por la barra de direcciones a continuación del
+nombre del archivo.
+● POST: la información viajará junto a los encabezados del HTML (será “invisible”).
+Si el method no se indica, por defecto será GET.
+
+ENCTYPE
+Cuando el valor del atributo method es post, el mismo es el tipo MIME del
+contenido, que es usado para enviar el formulario al servidor. Los posibles valores
+son:
+● application/x-www-form-urlencoded: será el valor por defecto si un atributo
+no está especificado.
+● multipart/form-data: usar este valor si se está usando el elemento input con
+el atributo type ajustado a "file".
+● text/plain (HTML5)
+Normalmente se utiliza para permitir el envío de archivos a través de un formulario.
+
+INGRESO DE TEXTO
+Existen tres controles generales para el ingreso de texto:
+● Cajas de texto de una sola línea (no acepta el uso de la tecla Enter).
+● Cajas para el ingreso de contraseñas (el contenido no será visible).
+● Cajas para contenido multilínea. Puede ser una o muchas líneas de texto.
+Atributo “name”
+Control de formulario: <input>: Text, Email, Password.
+Control de formulario: <textarea></textarea>
+
+
+----------------------------------------------------------------------------------BOTONES----------------------------------------------------------------------------------
+
+
+
+BOTONES
+Los botones disparan las acciones del formulario. Hay 3 tipos:
+● El que envía los datos al archivo indicado como Action.
+● El que vacía todo lo ingresado y resetea los campos.
+● El que “no hace nada”, pensado para usarse con Javascript.
+Todos los botones son etiquetas <input>, con distintos tipos de “Type”. El botón debe
+de estar dentro del <form> que afectará.
+<form>
+ <input type="submit" value="Enviar formulario"/>
+ <input type="reset" value="Limpiar formulario"/>
+ <input type="button" value="Sin acciones"/>
+</form>
+Representa la etiqueta del botón, la cual es normalmente mostrada por los navegadores
+dentro de éste.
+● Input de tipo “submit”: envía el formulario.
+● Input de tipo “reset”: resetea el formulario.
+● Input de tipo “button”: no tiene acciones por defecto.
+
+<form>
+ <input type="submit" value="Enviar formulario"/>
+ <input type="reset" value="Limpiar formulario"/>
+ <input type="button" value="Sin acciones"/>
+</form>
+
+CONTROLES DE SELECCIÓN
+En estos casos, el usuario no puede ingresar libremente un texto, sino que el programador
+le da una lista predefinida. El dato que llega al elegir una opción se define desde el atributo
+“value”. Existen 3 grupos de controles de selección:
+● Botones de radio: sólo se puede elegir una opción.
+● Casillas de chequeo: de toda la lista de opciones, el usuario puede optar por una,
+todas o ninguna opción.
+● Menú desplegable: sólo es posible seleccionar una opción.
+
+
+
+ATRIBUTO “VALUE"
+En este caso es el valor que se enviará al enviarse el formulario.
+Botones de radio:
+
+<form>
+ <div>hombre</div>
+ <input type="radio" name="sexo" value="hombre" />
+ <div>mujer</div>
+ <input type="radio" name="sexo" value="mujer" />
+</form>
+
+Casillas de chequeo:
+<form>
+ <div>Acepta términos y condiciones</div>
+ <input type="checkbox" name="acepta" value="1" />
+</form>
+
+ETIQUETA <LABEL>
+<form>
+ <label for="nombre_apellido">Nombre:</label>
+ <input type="text" name="nombre_apellido" />
+</form>
+Define formalmente a cada elemento de un formulario. Esta etiqueta es de mucha ayuda para
+generar un formulario accesible.
+Su principal atributo es “for”, que va a referenciar a “label” con su elemento del
+formulario. El valor del atributo “for” debe ser igual al valor del atributo “id” o “name” del
+elemento.
+
+<form>
+ <label for="nombre_apellido">Nombre:</label>
+ <input type="text" name="nombre_apellido" />
+</form>
+
+MENÚ DESPLEGABLE
+
+Es el llamado combo-box, selector o menú. De toda la lista, se puede elegir una
+opción (aunque tiene un atributo que permite cambiarlo). Lo ideal es que sean al
+menos dos elementos distintos para observar el select:
+
+<form>
+ <select name="talles">
+ <option value="L">Large</option>
+ <option value="M">Medium</option>
+ <option value="S">Small</option>
+ </select>
+</form>
+
+CONJUNTO DE CAMPO
+
+Las etiquetas <fieldset> y <legend> se utilizan en conjunto. La primera, tiene como objetivo
+crear grupos de elementos del formulario que posean un mismo propósito; mientras que la
+segunda, define formalmente el propósito del elemento fieldset. Se estructuran de la
+siguiente manera:
+
+<form>
+ <fieldset>
+ <legend>Talle de remera</legend>
+  Aquí irán los elementos de formulario
+</fieldset>
+</form>
+
+
+----------------------------------------------------------------------------------ARQUITECTURA DE UN SITIO----------------------------------------------------------------
+
+Los enlaces, también conocidos como links o anchors, se utilizan para relacionar partes del
+mismo documento. Por defecto, se visualizan azules y subrayados.
+Para crear uno, es necesario utilizar la etiqueta de ancla <a> con el atributo “href”, que
+establecerá el destino al que apunta. Por ejemplo:
+
+<a href="productos.html">Productos</a>
+
+----------------------------------------------------------------------------------ENLACES----------------------------------------------------------------------------------
+--------------------enlace relativo-----------------------------
+Los enlaces relativos son aquellos que apuntan a páginas ubicadas dentro del
+mismo proyecto. Si la página referenciada se encuentra en el mismo directorio, alcanza
+con mencionar el nombre de la misma para generar el enlace.
+
+<a href="contacto.html">Contacto</a>
+
+En caso de que el archivo se encuentre en un directorio específico, el mismo deberá ser
+mencionado.
+
+<a href="imagenes/mapa.jpg">ver mapa</a>
+
+
+--------------enlace absoluto--------------------------
+
+Los enlaces absolutos son aquellos cuyo destino apunta a un
+documento que está fuera del sitio, y debe ser especificado utilizando la
+URL completa:
+
+<a href="http://www.coderhouse.com/frontend">Curso de Frontend</a>
+
+
+--------------------------Enlace interno-----------------------
+
+Los enlaces internos permiten referenciar secciones de tu página, para lo cual
+se utiliza el id:
+
+<a href="#pie">Ir al pie de página</a>
+...
+<footer id="pie"></footer>
+
+También puedes usar como destino una sección específica una página distinta:
+<a href="contacto.html#formulario">Formulario de contacto</a>
+
+En el ejemplo anterior, el enlace apunta a la sección que tiene el id formulario dentro de la
+página “contacto.html”. No sólo es posible agregar enlaces a texto, también puedes hacerlo con
+otros elementos. Por lo general, se usan textos o imágenes. Veamos un ejemplo de enlaces
+con una imagen:
+<a href="http://www.coderhouse.com/cursos.html#frontend">
+ <img src="img/logo_coderhouse.png" alt="coderhouse"/>
+</a>
+
+----------------------------------------------------------------------------------INSERTAR IMAGENES----------------------------------------------------------------------------------
+
+
+INSERTAR IMÁGENES
+Se insertan con la etiqueta <img/>, que pertenece al grupo de las etiquetas
+que se cierran a sí mismas (con la barra al final).
+Para funcionar requiere, como mínimo, indicar en dónde está el archivo a
+mostrar. Eso se hace con el atributo “src” (el source o fuente), que respeta
+todas las reglas de ruteo vistas en los links.
+Se comportan como elementos de línea, esto significa que se verán una
+al lado de la otra.
+
+
+ALT
+El “alt” es un texto que debe representar la foto que se está
+visualizando. Tiene que ser conciso y breve, pero dejar en claro de qué
+se trata la imagen.
+<img src="smiley.gif" alt="Smiley Cara" />
+
+FAVICON
+El favicon es un pequeño ícono que
+identifica un sitio web cuando está
+abierto en una pestaña o cuando es
+guardado como favorito.
+HTML recomendado para agregar
+dentro de tu etiqueta <head>:
+<link rel="shortcut icon" href="favicon.png">  
+
+
+ETIQUETA IFRAME
+Es un elemento HTML que permite insertar o incrustar un
+documento HTML dentro de un documento HTML principal.
+
+<iframe src="pagina_fuente.html" width=290
+height=250>Texto para cuando el navegador no
+conoce la etiqueta iframe</iframe>
+-->
+
+<!-- CLASE 3  INTRO A CSS
+
+ -->
+
+<!-- CLASE 4-->
+<!-- CLASE 5-->
+
+<!-- CLASE 6-->
+<!-- CLASE 7-->
+<!-- CLASE 8-->
+<!-- CLASE 9-->
+<!-- CLASE 10-->
+<!-- CLASE 11-->
+<!-- CLASE 12-->
+<!-- CLASE 13-->
+<!-- CLASE 14-->
+<!-- CLASE 15-->
+<!-- CLASE 16-->
+<!-- CLASE 17-->
+<!-- CLASE 18-->
+
+
+
+
+
+

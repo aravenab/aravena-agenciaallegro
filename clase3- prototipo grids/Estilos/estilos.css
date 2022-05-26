@@ -1,0 +1,200 @@
+/* colores agencia allegro
+color piel: #ffe7d4
+color celeste:#65d4cc
+color morado:#493148
+color naranjo:#f89379
+
+
+/* Mobile First MEDIA QUERIES */
+
+/* smartphone */
+
+
+html{
+box-sizing: border-box;
+}
+    
+*{
+padding: 0;
+margin: 0;        
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+}
+.hero{
+    width: 100vw;
+    height: 80vh;
+}
+main{
+    contain: content;
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 10vh;
+}
+
+
+
+
+header nav ul li {
+    list-style: none;
+        text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* menú de hamburguesa */
+
+/* declarar areas */
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+.hero{
+    grid-area: hero;
+   
+}
+
+/* grid areas */
+body{
+    overflow-x: hidden;
+
+    
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh 100vh 10vh ;
+
+    grid-template-areas: "header"
+                         " main"
+                         "Footer"
+}
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media(min-width: 481px){
+
+}
+
+/* desktop */
+
+@media(min-width: 1024px){
+/* grids */
+
+
+
+
+body{
+
+    
+    display: grid;
+
+    grid-template-columns: auto ;
+    grid-template-rows: 10vh 100vh  10vh  ;
+
+    grid-template-areas: "header "
+                         " main "
+                         "Footer "
+    
+}
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@100 & display=swap');
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* flex */
+/* header flex */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+nav ul li a{
+    color: #65d4cc;
+}
+
+
+/* hero flex */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f89379;
+    background-size: cover;
+    height: 1100px;
+    color: #f89379;
+    background: url(../img/pexels-mikael-blomkvist-8690908\ \(1\).jpg);
+    background-size: contain;
+    opacity: 0.8;
+}
+
+
+
+h1{
+    font-size: 40px;
+    margin: 400px 0 30px 0;
+}
+.botonesHero{
+    display: flex;
+}
+.botonHero{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* sitio */
+
+
+
+
+
+header{
+    background-color:#ffe7d4;
+}
