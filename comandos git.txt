@@ -1,1 +1,82 @@
+INSTRUCTIVO GIT + GITHUB
+
+Hacer la configuración básica
+
+Ver siempre que la ruta sea la correcta. Abrir git bash here desde afuera de la carpeta de nuestro proyecto.
+git init (siempre)
+git status para ver el estado de los archivos (si están para commit o no)
+git add .  (para preparar los archivos y hacer commit)
+git commit -m “dejamos mensaje” (este mensaje es el que vamor a ver en github)
+git status para ver que todos los archivos del proyectos estén commiteados (o guardados en el repositorio local)
+ir a github
+crear repositorio remoto
+vincular el repositorio local (git) con el repositorio remoto (github) por medio de los siguientes comandos (ESTO LO HACEMOS POR ÚNICA VEZ):
+
+git remote add origin https://github.com/LucianaGarro/git.git
+git branch -M main
+git push -u origin main
+ Los va a redireccionar a una pestaña y apretar el botón de autenticación (NO VALIDAR POR TOKEN SINO POR AUTHENTICATOR)
+la rama master (git) va a pasar a llamarse MAIN
+antes de fusionar una rama a la rama principal me tengo que asegurar que, la rama principal esté actualizada (limpia)
+para crear una rama nueva:
+git branch nombre de la rama
+para cambiar de rama: 
+git checkout nombre de la rama
+los cambios que hacemos que hacemos en la nueva rama debemos commitearlos (esto no implica que lo fusione con la rama main)
+una vez que está limpia la rama nueva volvemos a la rama main si queremos hacer merge (fusionar los cambios)
+fusionamos cambios con el comado:
+git merge nombre de la rama
+si lo queremos subir a github (pushear) usamos el comando:
+git push 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git init
+
+
+
+
 git config --global user.email "mimail@gmail.com"
+
+
+-------------cambios de ramas, agregar contenido de ramas---------
+git branch  
+
+git Branch nombreDeLaRama
+
+git checkout nombreDeLaRama  (nombreDeLaRama es para la rama en la que quiero entrar)
+
+git add .
+
+git status
+
+git commit -m "modificación titulo index aravena+agenciaalegro"    (ejemplo)
+
+para fusionar contenidos tengo que estar situado en la rama principal, de lo contrario se rompe todo el proyecto
+
+
+git merge style   (este comando trae todos los cambios de ramas secundarias a la rama principal)
+
+git status
+
+git branch -D style
+
+git branch
+
+git log --online
+
+git log
+

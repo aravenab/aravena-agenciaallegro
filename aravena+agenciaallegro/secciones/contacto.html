@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agencia Allegro</title>
+    <title>Document</title>
     <link rel="icon" href="../img/Isotipo-4.png">
     <link rel="stylesheet" href="../Estilos/estilos.css">
   </head>
@@ -42,26 +42,39 @@
     </header>
 
     <main>
-      <h1>Nosotros</h1>
-      <h2>quienes somos</h2>
-      <section>
-        <h3>Video demostrativo</h3>
-
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/plC9WbIMJCk?start=3"
-          title="YouTube
-          video player"
-          frameborder="0"
-          allow="accelerometer; autoplay;
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <p>
-          aquí va a ir contenido de valor
-        </p>
-      </section>
+     
+      
+      <form>
+        <fieldset>
+          <legend>Formulario de Contacto</legend>
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Escribe tu nombre" id="nombre"> 
+          <br><br>
+          <label for="Email">Email</label>
+          <input type="Email" id="Email" placeholder="Ingrese su Email">
+          <br><br>
+          <select id="lista desplegable"> 
+            <option hidden value="servicios">¿Qué servicio deseas contratar?</option>
+            <option value="">Marketing de Influencers</option>
+            <option value="">Community Managers</option>
+            <option value="">Google Ads</option>
+            <option value="">Facebook & Instagram Ads</option>
+            <option value="">Fotografía Profesional</option>
+            <option value="">Video Profesional</option>
+            <option value="">Creación de página web</option>
+            <option value="">Google Tag Manager</option>
+            <option value="">Google Data Studio</option>
+            <option value="">Asesorías</option>
+  
+          </select>
+          <br><br>
+          <label for="textarea"></label>
+          <textarea name="" id="textarea" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+          <br><br>
+          <input type="submit"> 
+          
+        </fieldset>
+      </form>
 
      
     </main>
