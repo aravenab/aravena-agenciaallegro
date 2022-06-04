@@ -173,7 +173,19 @@ nav ul li a{
 h1{
     font-size: 40px;
     margin: 400px 0 30px 0;
+    animation-duration: 4s;
+    animation-name: allegro;
+    animation-iteration-count: infinite;
 }
+@keyframes allegro {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .botonesHero{
     display: flex;
 }
@@ -196,7 +208,7 @@ h1{
 
 
 header{
-    background-color:#ffe7d4;
+    background-image: linear-gradient(#ffe7d4,#f89379 );
 }
 
 

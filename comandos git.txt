@@ -28,7 +28,13 @@ fusionamos cambios con el comado:
 git merge nombre de la rama
 si lo queremos subir a github (pushear) usamos el comando:
 git push 
+git push --all
 && concatenar 2 comandos en 1
+
+subir cambios para que los tutores los revisen
+gitt add .
+git commit -m "cambios para github"
+git push --all
 
 token github:
 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
