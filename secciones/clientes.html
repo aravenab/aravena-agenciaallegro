@@ -11,10 +11,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>Influencers</title>
   </head>
-
   <body>
     <header>
       <!-- navbar -->
@@ -23,7 +22,7 @@
           <a class="navbar-brand" href="#">
             <img
               src="../img/Logo-principal-1.png"
-              alt=""
+              alt="logo-agencia-allegro"
               width="120"
               height="60"
           /></a>
@@ -49,17 +48,26 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./nosotros.html"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./servicios.html"
                   >Servicios</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./clientes.html"
                   >Clientes</a
                 >
               </li>
@@ -76,53 +84,45 @@
         </div>
       </nav>
     </header>
-
     <main>
-        <h1>Contacto empresas</h1>
-        <form class="container">
-     
-    <div class="mb-3">
-        <label class="form-label" for="Nombre">Nombre</label>
-        <input class="form-control" id="name" type="text" placeholder="Nombre" />
-      </div>
-  
-      
-      <div class="mb-3">
-        <label class="form-label" for="email">Email</label>
-        <input class="form-control" id="email" type="email" placeholder="Email" />
-      </div>
-      
-      <select class="form-select mb-3" aria-label="Default select example">
-        <option selected>¿Qué servicio te interesa cotizar?</option>
-        <option value="1">Marketing de Influencers</option>
-        <option value="2">Publicidad en Google o redes sociales</option>
-        <option value="3">Community Managers</option>
-      </select>
 
-      <div class="mb-3">
-        <label class="form-label" for="message">Mensaje</label>
-        <textarea class="form-control" id="message" type="text" placeholder="Mensaje" style="height: 10rem;"></textarea>
-      </div>
-  
-      
-      <div class="d-grid">
-        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-      </div>
-    </form> 
-   
-  
-  </div>
+        <div class="card-group">
+            <div class="card">
+              <img src="../img/Py8hXnJ5CYNYQWjyR-200-x.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vettel Chocolates</h5>
+                <p class="card-text">Fueron nuestro primer cliente, confiaron en nosotros desde el principio</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Vettel Chocolates</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/kempina.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CCU</h5>
+                <p class="card-text">Kem piña confio en nosotros, al poco tiempo de haber creado nuestra empresa.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Kem piña</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/preview-xl.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Practicum</h5>
+                <p class="card-text">Nuestro más reciente trabajo es con practicum, logramos crear una campaña para sus bootcamps</p>
+              </div>
+             
+              <div class="card-footer">
+                <small class="text-muted">Practicum</small>
+              </div>
+            </div>
+          </div>
+       
     </main>
 
-    <footer class="">
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
-         
-          
-          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 otro sitio web creado por:
-            <a class="text-dark" href="#">AGENCIA ALLEGRO SPA</a>
-          </div>
-        </footer>
+    <footer></footer>
     <!-- bundle de bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
