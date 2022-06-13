@@ -8,11 +8,27 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
+/* enlaces no visitados */
+a:link{
+  color: blue;
+}
+/* enlaces visitados */
+a:visited{
+  color: purple;
+}
+/* enlaces activos */
+a:active{
+  color: lime;
+}
+/* el mouse sobre el enlace */
+a:hover{
+  background: grey;
+}
 
 header {
-    background-color:$colorPiel;
+    background-color:$background-colorPiel;
     li{
-        color: $colorMorado;
+        color: $background-colorMorado;
     }
 }
 

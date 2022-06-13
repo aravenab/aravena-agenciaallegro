@@ -1,19 +1,2 @@
 @import "variables";
 @import "generales";
-
-/* enlaces no visitados */
-a:link{
-    color: blue;
-}
-/* enlaces visitados */
-a:visited{
-    color: purple;
-}
-/* enlaces activos */
-a:active{
-    color: lime;
-}
-/* el mouse sobre el enlace */
-a:hover{
-    background: grey;
-}
