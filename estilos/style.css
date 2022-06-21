@@ -7,14 +7,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background-color: #ffe7d4;
-}
-
-header li {
-  color: #493148;
-}
-
 /* enlaces no visitados */
 a:link {
   color: blue;
@@ -33,5 +25,53 @@ a:active {
 /* el mouse sobre el enlace */
 a:hover {
   background: grey;
+}
+
+header {
+  background-color: #ffe7d4;
+}
+
+header li {
+  color: #65d4cc;
+}
+
+.box-uno {
+  background-color: blue;
+  width: 1800px;
+  height: 200px;
+}
+
+.btninfluencers {
+  background-color: #ffe7d4;
+}
+
+.btnpublicidad {
+  background-color: #493148;
+}
+
+.btncommunity {
+  background-color: #f89379;
+}
+
+.btn, .community, .publicidad {
+  border: 2px solid red;
+  background-color: gold;
+}
+
+.community {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #493148;
+  border-radius: 10px;
+}
+
+.publicidad {
+  font-size: 30px;
+  color: #ffe7d4;
+}
+
+.mixin1 {
+  height: 100px;
+  width: 300px;
+  background-color: #ffe7d4;
 }
 /*# sourceMappingURL=style.css.map */

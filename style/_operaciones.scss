@@ -1,0 +1,56 @@
+$ancho:600px;
+$blue: blue;
+$green: green;
+
+.box-uno{
+    background-color: $blue;
+    width: $ancho*3;
+    height: 40px*5;
+
+}
+// mapas
+$cards: (
+    influencers:#ffe7d4,
+    publicidad:#493148,
+    community:#f89379,
+
+);
+
+@each $card, $color in $cards {
+    .btn#{$card}{
+        background-color: $color;
+    }
+}
+
+// extend
+
+.btn{
+    border: 2px solid red;
+    background-color: gold;
+}
+
+.community{
+    @extend .btn;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #493148;
+    border-radius: 10px;
+}
+
+.publicidad{
+    @extend .btn;
+    font-size: 30px;
+    color: #ffe7d4;
+}
+// mixin
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.mixin1{
+    @include sizes (300px, 100px);
+    background-color: #ffe7d4;
+}
+
+    
